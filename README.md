@@ -16,6 +16,5 @@
 <figure class="half">
 <a href="/assets/Lottori.001.jpeg"><img src="/assets/Lottori.001.jpeg"></a>
 <a href="/assets/Lottori.002.jpeg"><img src="/assets/Lottori.002.jpeg"></a>
-<figcaption>Lottri</figcaption>
 </figure>
 
