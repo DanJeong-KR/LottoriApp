@@ -16,7 +16,7 @@
 		8E0306132293E531001FD4C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E0306112293E531001FD4C0 /* Main.storyboard */; };
 		8E0306152293E533001FD4C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E0306142293E533001FD4C0 /* Assets.xcassets */; };
 		8E0306182293E533001FD4C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E0306162293E533001FD4C0 /* LaunchScreen.storyboard */; };
-		8E030620229408AF001FD4C0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E03061F229408AF001FD4C0 /* FirstViewController.swift */; };
+		8E030620229408AF001FD4C0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E03061F229408AF001FD4C0 /* MainViewController.swift */; };
 		8E03062222941BD5001FD4C0 /* RandomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E03062122941BD5001FD4C0 /* RandomViewController.swift */; };
 		8E03062422941BFB001FD4C0 /* UserInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E03062322941BFB001FD4C0 /* UserInputViewController.swift */; };
 		8E03062922942227001FD4C0 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E03062822942227001FD4C0 /* UIViewExtension.swift */; };
@@ -43,7 +43,7 @@
 		8E0306142293E533001FD4C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E0306172293E533001FD4C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E0306192293E533001FD4C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E03061F229408AF001FD4C0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		8E03061F229408AF001FD4C0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8E03062122941BD5001FD4C0 /* RandomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomViewController.swift; sourceTree = "<group>"; };
 		8E03062322941BFB001FD4C0 /* UserInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputViewController.swift; sourceTree = "<group>"; };
 		8E03062822942227001FD4C0 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = Lottori/Helper/UIViewExtension.swift; sourceTree = SOURCE_ROOT; };
@@ -104,7 +104,7 @@
 		8E03062522941C1C001FD4C0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8E03061F229408AF001FD4C0 /* FirstViewController.swift */,
+				8E03061F229408AF001FD4C0 /* MainViewController.swift */,
 				8E03062122941BD5001FD4C0 /* RandomViewController.swift */,
 				8DED4BC82296967400CF4DD7 /* FixedBallViewController.swift */,
 				8E03062322941BFB001FD4C0 /* UserInputViewController.swift */,
@@ -230,7 +230,7 @@
 				8E03062922942227001FD4C0 /* UIViewExtension.swift in Sources */,
 				8E03062222941BD5001FD4C0 /* RandomViewController.swift in Sources */,
 				8DED4BC92296967400CF4DD7 /* FixedBallViewController.swift in Sources */,
-				8E030620229408AF001FD4C0 /* FirstViewController.swift in Sources */,
+				8E030620229408AF001FD4C0 /* MainViewController.swift in Sources */,
 				8E03062422941BFB001FD4C0 /* UserInputViewController.swift in Sources */,
 				8E03062B22951DA0001FD4C0 /* LottoriCodable.swift in Sources */,
 				8E1E795B2296B07600428C16 /* StaticData.swift in Sources */,

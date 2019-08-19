@@ -1,19 +1,26 @@
-# LottoriApp
+# Lottori - 스마트 로또 번호 발생기
+최신 로또 정보를 확인하고 조회할 수 있는 앱. <br>
+최근 15주간 미출현 번호, 자주 출현한 번호 등을 추출하는 알고리즘을 적용해 사용자에게 스마트 정보 제공
+* 기간 : 2019.06 ~ 현재
+* 소속 : 개인프로젝트
+* 역할 : iOS 앱개발 및 배포
+* 사용기술 : Swift5, AVFoundation(QR코드 인식을 위한 카메라), 오픈API
+### 설계 (마인드맵)
+<a href="/assets/LottoriDesign.pdf" target="_blank"><img src="/assets/LottoriDesign.png"></a>
 
-### Lottori-스마트 로또 번호 발생기 (2019.05~2019.06)
-* 최신 로또 정보를 확인하고 조회할 수 있는 로또 번호 발생기 앱.
-* QR코드 리더기 구현.
-* 동행복권 open API를 사용해서 서버와 통신.
-* 동행복권 open API를 통해 역대 번호 데이터를 가져와서 내 로또 번호와 비교 알고리즘 구현.
-* 최근 5주, 10주, 15주간 미출현 번호 정보 제공.
-* 사용기술 : Swift5, AVFoundation, Network, Github
+### 스크린샷
 
+<a href="/assets/mainPage.gif" target="_blank"><img src="/assets/mainPage.gif" alt="My Image" width="250"></a>
+<a href="/assets/selectPage.gif" target="_blank"><img src="/assets/selectPage.gif" alt="My Image" width="250"></a>
+<a href="/assets/randomPage.gif" target="_blank"><img src="/assets/randomPage.gif" alt="My Image" width="250"></a>
 
-#### Demo 영상 (클릭시 YouTube 이동)
-[![Lottori Demo](https://img.youtube.com/vi/RKUwxQVxnhg/0.jpg)](https://youtu.be/RKUwxQVxnhg "Lottori")
+### 데모영상
+<a href="https://www.youtube.com/watch?v=TYDtgXENrI4" target="_blank"><img src="/assets/LottoriThumnail.png"></a>
 
-<figure class="half">
-<a href="/assets/Lottori.001.jpeg"><img src="/assets/Lottori.001.jpeg"></a>
-<a href="/assets/Lottori.002.jpeg"><img src="/assets/Lottori.002.jpeg"></a>
-</figure>
+<br>
 
+### 문제해결 아카이브
+  * QR코드를 어떻게 인식하게 할까?
+    * AVFoundation을 사용해서 카메라에 접근해서 QR코드를 읽을 수 있었다.
+  * 역대 로또 번호를 비교 분석해서 역대 당첨 횟수와 금액을 조회하는 알고리즘이 필요하다.
+    * 고차함수와 반복문의 enumerated() 를 활용해서 알고리즘을 구현할 수 있었다.

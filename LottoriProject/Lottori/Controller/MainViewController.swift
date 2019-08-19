@@ -10,7 +10,7 @@
 import UIKit
 import SafariServices
 
-final class FirstViewController: UIViewController {
+final class MainViewController: UIViewController {
     
     let titleImageView = UIImageView(image: UIImage(named: "title"))
     let firstView = FirstView()

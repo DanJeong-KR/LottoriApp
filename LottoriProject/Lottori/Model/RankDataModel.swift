@@ -12,14 +12,14 @@ struct RankDataModel {
 }
 
 struct LottoDataModel {
-    var date: String
-    var round: Int 
+    var date: String // 발표 날짜
+    var round: Int // 회차
     
-    var num1: Int
+    var num1: Int // 볼 숫자
     var num2: Int
     var num3: Int
     var num4: Int
     var num5: Int
     var num6: Int
-    var numBonus: Int
+    var numBonus: Int // 보너스 볼
 }
