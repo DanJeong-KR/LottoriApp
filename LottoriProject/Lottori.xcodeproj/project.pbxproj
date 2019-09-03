@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D9150FDF370B88F23F85F51 /* Pods_Lottori.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D9EC5C0820B654948639FBF /* Pods_Lottori.framework */; };
 		8DA40147229549F300416798 /* UserInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA40146229549F300416798 /* UserInputCell.swift */; };
 		8DED4BC3229574B000CF4DD7 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED4BC2229574B000CF4DD7 /* RankingViewController.swift */; };
 		8DED4BC5229576E700CF4DD7 /* RankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED4BC4229576E700CF4DD7 /* RankCell.swift */; };
@@ -29,9 +30,12 @@
 		8E1E795922962A9F00428C16 /* Lottori.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1E795822962A9F00428C16 /* Lottori.swift */; };
 		8E1E795B2296B07600428C16 /* StaticData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1E795A2296B07600428C16 /* StaticData.swift */; };
 		8E1E795D2296BB3E00428C16 /* RankDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1E795C2296BB3E00428C16 /* RankDataModel.swift */; };
+		8EF52B1E231ED6E200FEF677 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8EF52B1D231ED6E200FEF677 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D9EC5C0820B654948639FBF /* Pods_Lottori.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lottori.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51EFD4CD79E99632E353677B /* Pods-Lottori.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lottori.debug.xcconfig"; path = "Target Support Files/Pods-Lottori/Pods-Lottori.debug.xcconfig"; sourceTree = "<group>"; };
 		8DA40146229549F300416798 /* UserInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputCell.swift; sourceTree = "<group>"; };
 		8DED4BC2229574B000CF4DD7 /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
 		8DED4BC4229576E700CF4DD7 /* RankCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankCell.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 		8E1E795822962A9F00428C16 /* Lottori.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lottori.swift; sourceTree = "<group>"; };
 		8E1E795A2296B07600428C16 /* StaticData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticData.swift; sourceTree = "<group>"; };
 		8E1E795C2296BB3E00428C16 /* RankDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankDataModel.swift; sourceTree = "<group>"; };
+		8EF52B1D231ED6E200FEF677 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EEE6AF21BAFAEB36B4B1F141 /* Pods-Lottori.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lottori.release.xcconfig"; path = "Target Support Files/Pods-Lottori/Pods-Lottori.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,17 +69,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D9150FDF370B88F23F85F51 /* Pods_Lottori.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6FB2B05FC6DBAA044DD9804B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51EFD4CD79E99632E353677B /* Pods-Lottori.debug.xcconfig */,
+				EEE6AF21BAFAEB36B4B1F141 /* Pods-Lottori.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8E0306012293E531001FD4C0 = {
 			isa = PBXGroup;
 			children = (
 				8E03060C2293E531001FD4C0 /* Lottori */,
 				8E03060B2293E531001FD4C0 /* Products */,
+				6FB2B05FC6DBAA044DD9804B /* Pods */,
+				DB5FF4A8A3F5765E98D1E7B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +116,7 @@
 				8E0306142293E533001FD4C0 /* Assets.xcassets */,
 				8E0306162293E533001FD4C0 /* LaunchScreen.storyboard */,
 				8E0306192293E533001FD4C0 /* Info.plist */,
+				8EF52B1D231ED6E200FEF677 /* GoogleService-Info.plist */,
 			);
 			path = Lottori;
 			sourceTree = "<group>";
@@ -155,6 +175,14 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		DB5FF4A8A3F5765E98D1E7B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D9EC5C0820B654948639FBF /* Pods_Lottori.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E03061C2293E533001FD4C0 /* Build configuration list for PBXNativeTarget "Lottori" */;
 			buildPhases = (
+				1E44A03706202C3589DEC5C3 /* [CP] Check Pods Manifest.lock */,
 				8E0306062293E531001FD4C0 /* Sources */,
 				8E0306072293E531001FD4C0 /* Frameworks */,
 				8E0306082293E531001FD4C0 /* Resources */,
+				562219030E4C541F74FD3DE2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EF52B1E231ED6E200FEF677 /* GoogleService-Info.plist in Resources */,
 				8E0306182293E533001FD4C0 /* LaunchScreen.storyboard in Resources */,
 				8E0306152293E533001FD4C0 /* Assets.xcassets in Resources */,
 				8E0306132293E531001FD4C0 /* Main.storyboard in Resources */,
@@ -220,6 +251,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E44A03706202C3589DEC5C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lottori-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		562219030E4C541F74FD3DE2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lottori/Pods-Lottori-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lottori/Pods-Lottori-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lottori/Pods-Lottori-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8E0306062293E531001FD4C0 /* Sources */ = {
@@ -388,43 +461,45 @@
 		};
 		8E03061D2293E533001FD4C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51EFD4CD79E99632E353677B /* Pods-Lottori.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G4MM77V7NH;
+				DEVELOPMENT_TEAM = KH53J489YG;
 				INFOPLIST_FILE = Lottori/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = changsik;
+				PRODUCT_BUNDLE_IDENTIFIER = sicc.lottori;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		8E03061E2293E533001FD4C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEE6AF21BAFAEB36B4B1F141 /* Pods-Lottori.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G4MM77V7NH;
+				DEVELOPMENT_TEAM = KH53J489YG;
 				INFOPLIST_FILE = Lottori/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = changsik;
+				PRODUCT_BUNDLE_IDENTIFIER = sicc.lottori;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

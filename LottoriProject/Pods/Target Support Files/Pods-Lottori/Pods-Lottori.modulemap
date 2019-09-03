@@ -1,0 +1,6 @@
+framework module Pods_Lottori {
+  umbrella header "Pods-Lottori-umbrella.h"
+
+  export *
+  module * { export * }
+}
