@@ -6,5 +6,6 @@ target 'Lottori' do
   use_frameworks!
   # Pods for Lottori
   pod 'Firebase/Analytics'
+  pod 'Firebase/Database'
 
 end
