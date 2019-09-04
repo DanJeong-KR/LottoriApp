@@ -9,6 +9,7 @@
 
 import UIKit
 import SafariServices
+import FirebaseDatabase
 
 final class MainViewController: UIViewController {
     
@@ -21,6 +22,23 @@ final class MainViewController: UIViewController {
     // MARK: - 뷰 라이프 사이클 -----------
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+      //test
+      var ref: DatabaseReference
+      ref = Database.database().reference()
+      
+      ref.child("archiveData").observe(.value) { (snapshot) in
+        let value = snapshot.value as? [String : Any]
+        print("value : \(value)")
+      }
+      
+      ref.child("archiveData").setValue(["2" : ["bonus" : 7, "number" : ["1", "2"]]])
+      ref.child("archiveData").updateChildValues(["3" : ["bonus" : 7, "number" : ["1", "2"]]])
+      
+      
+      
+      
+      
         configure()
         getLottoAPI()
         
@@ -30,6 +48,15 @@ final class MainViewController: UIViewController {
         // 이벤트만 전달시 addtarget 으로 가능.
         // firstView.qrButton.addTarget(self, action: #selec, for: <#T##UIControl.Event#>)
     }
+  
+  func setData(num: Int) {
+    let urlString = "https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo=" + String(num)
+    let url = URL(string: urlString)!
+    
+    let dataTask = URLSession.shared.dataTask(with: url) { (data, response, error) in
+      let jsonObject = JSONSerialization.jsonObject(with: data!, options: <#T##JSONSerialization.ReadingOptions#>)
+    }
+  }
     
     override func viewDidAppear(_ animated: Bool) {
         // 시점 문제 해결하려고
