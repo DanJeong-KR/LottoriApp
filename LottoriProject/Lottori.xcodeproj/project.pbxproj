@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,8 +20,6 @@
 		8E030620229408AF001FD4C0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E03061F229408AF001FD4C0 /* MainViewController.swift */; };
 		8E03062222941BD5001FD4C0 /* RandomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E03062122941BD5001FD4C0 /* RandomViewController.swift */; };
 		8E03062422941BFB001FD4C0 /* UserInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E03062322941BFB001FD4C0 /* UserInputViewController.swift */; };
-		8E03062922942227001FD4C0 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E03062822942227001FD4C0 /* UIViewExtension.swift */; };
-		8E03062B22951DA0001FD4C0 /* LottoriCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E03062A22951DA0001FD4C0 /* LottoriCodable.swift */; };
 		8E03062D22953BFB001FD4C0 /* QRCodeScanningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E03062C22953BFB001FD4C0 /* QRCodeScanningViewController.swift */; };
 		8E1859C1229ED3730088998E /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1859C0229ED3730088998E /* Logger.swift */; };
 		8E1859C6229ED4EE0088998E /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1859C5229ED4EE0088998E /* FirstView.swift */; };
@@ -31,6 +29,10 @@
 		8E1E795B2296B07600428C16 /* StaticData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1E795A2296B07600428C16 /* StaticData.swift */; };
 		8E1E795D2296BB3E00428C16 /* RankDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1E795C2296BB3E00428C16 /* RankDataModel.swift */; };
 		8EF52B1E231ED6E200FEF677 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8EF52B1D231ED6E200FEF677 /* GoogleService-Info.plist */; };
+		8EF52B21231FE10D00FEF677 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF52B20231FE10D00FEF677 /* ServiceError.swift */; };
+		8EF52B23231FE18000FEF677 /* LottoriService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF52B22231FE18000FEF677 /* LottoriService.swift */; };
+		8EF52B25231FE2E700FEF677 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF52B24231FE2E700FEF677 /* DataModel.swift */; };
+		8EF52B29231FE88C00FEF677 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF52B28231FE88B00FEF677 /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,8 +52,6 @@
 		8E03061F229408AF001FD4C0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8E03062122941BD5001FD4C0 /* RandomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomViewController.swift; sourceTree = "<group>"; };
 		8E03062322941BFB001FD4C0 /* UserInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputViewController.swift; sourceTree = "<group>"; };
-		8E03062822942227001FD4C0 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = Lottori/Helper/UIViewExtension.swift; sourceTree = SOURCE_ROOT; };
-		8E03062A22951DA0001FD4C0 /* LottoriCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoriCodable.swift; sourceTree = "<group>"; };
 		8E03062C22953BFB001FD4C0 /* QRCodeScanningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScanningViewController.swift; sourceTree = "<group>"; };
 		8E1859C0229ED3730088998E /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		8E1859C5229ED4EE0088998E /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
@@ -61,6 +61,10 @@
 		8E1E795A2296B07600428C16 /* StaticData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticData.swift; sourceTree = "<group>"; };
 		8E1E795C2296BB3E00428C16 /* RankDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankDataModel.swift; sourceTree = "<group>"; };
 		8EF52B1D231ED6E200FEF677 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8EF52B20231FE10D00FEF677 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		8EF52B22231FE18000FEF677 /* LottoriService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoriService.swift; sourceTree = "<group>"; };
+		8EF52B24231FE2E700FEF677 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		8EF52B28231FE88B00FEF677 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		EEE6AF21BAFAEB36B4B1F141 /* Pods-Lottori.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lottori.release.xcconfig"; path = "Target Support Files/Pods-Lottori/Pods-Lottori.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,7 +86,6 @@
 				51EFD4CD79E99632E353677B /* Pods-Lottori.debug.xcconfig */,
 				EEE6AF21BAFAEB36B4B1F141 /* Pods-Lottori.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -110,8 +113,9 @@
 				8E03060D2293E531001FD4C0 /* AppDelegate.swift */,
 				8E03062622941C31001FD4C0 /* Model */,
 				8E03062522941C1C001FD4C0 /* Controller */,
+				8EF52B1F231FE09700FEF677 /* Service */,
 				8E03062722941C3F001FD4C0 /* View */,
-				8E1859C2229ED37B0088998E /* Helper */,
+				8E1859C2229ED37B0088998E /* Utility */,
 				8E0306112293E531001FD4C0 /* Main.storyboard */,
 				8E0306142293E533001FD4C0 /* Assets.xcassets */,
 				8E0306162293E533001FD4C0 /* LaunchScreen.storyboard */,
@@ -137,8 +141,8 @@
 		8E03062622941C31001FD4C0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8E03062A22951DA0001FD4C0 /* LottoriCodable.swift */,
 				8E1E795C2296BB3E00428C16 /* RankDataModel.swift */,
+				8EF52B24231FE2E700FEF677 /* DataModel.swift */,
 				8E1E795A2296B07600428C16 /* StaticData.swift */,
 				8E1E795822962A9F00428C16 /* Lottori.swift */,
 			);
@@ -156,13 +160,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		8E1859C2229ED37B0088998E /* Helper */ = {
+		8E1859C2229ED37B0088998E /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				8E03062822942227001FD4C0 /* UIViewExtension.swift */,
-				8E1859C0229ED3730088998E /* Logger.swift */,
+				8EF52B27231FE81300FEF677 /* Extensions */,
+				8EF52B26231FE80800FEF677 /* Helpers */,
 			);
-			path = Helper;
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		8E1859C3229ED3CD0088998E /* Cell */ = {
@@ -173,6 +177,31 @@
 				8DED4BCA2296970800CF4DD7 /* FixedBallCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		8EF52B1F231FE09700FEF677 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8EF52B20231FE10D00FEF677 /* ServiceError.swift */,
+				8EF52B22231FE18000FEF677 /* LottoriService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		8EF52B26231FE80800FEF677 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8E1859C0229ED3730088998E /* Logger.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8EF52B27231FE81300FEF677 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8EF52B28231FE88B00FEF677 /* UIViewExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		DB5FF4A8A3F5765E98D1E7B6 /* Frameworks */ = {
@@ -299,23 +328,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EF52B21231FE10D00FEF677 /* ServiceError.swift in Sources */,
 				8E185A2F22A429BC0088998E /* UserInputView.swift in Sources */,
-				8E03062922942227001FD4C0 /* UIViewExtension.swift in Sources */,
 				8E03062222941BD5001FD4C0 /* RandomViewController.swift in Sources */,
 				8DED4BC92296967400CF4DD7 /* FixedBallViewController.swift in Sources */,
+				8EF52B23231FE18000FEF677 /* LottoriService.swift in Sources */,
 				8E030620229408AF001FD4C0 /* MainViewController.swift in Sources */,
 				8E03062422941BFB001FD4C0 /* UserInputViewController.swift in Sources */,
-				8E03062B22951DA0001FD4C0 /* LottoriCodable.swift in Sources */,
 				8E1E795B2296B07600428C16 /* StaticData.swift in Sources */,
 				8E1859C1229ED3730088998E /* Logger.swift in Sources */,
 				8E1E795922962A9F00428C16 /* Lottori.swift in Sources */,
 				8E185A2D22A429B20088998E /* RandomView.swift in Sources */,
 				8DA40147229549F300416798 /* UserInputCell.swift in Sources */,
 				8E03062D22953BFB001FD4C0 /* QRCodeScanningViewController.swift in Sources */,
+				8EF52B25231FE2E700FEF677 /* DataModel.swift in Sources */,
 				8DED4BC5229576E700CF4DD7 /* RankCell.swift in Sources */,
 				8E1859C6229ED4EE0088998E /* FirstView.swift in Sources */,
 				8E03060E2293E531001FD4C0 /* AppDelegate.swift in Sources */,
 				8DED4BCB2296970800CF4DD7 /* FixedBallCell.swift in Sources */,
+				8EF52B29231FE88C00FEF677 /* UIViewExtension.swift in Sources */,
 				8DED4BC3229574B000CF4DD7 /* RankingViewController.swift in Sources */,
 				8E1E795D2296BB3E00428C16 /* RankDataModel.swift in Sources */,
 			);

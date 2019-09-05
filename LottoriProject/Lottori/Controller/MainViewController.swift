@@ -27,13 +27,13 @@ final class MainViewController: UIViewController {
       var ref: DatabaseReference
       ref = Database.database().reference()
       
-      ref.child("archiveData").observe(.value) { (snapshot) in
+      ref.child("archiveData").child("2").observe(.value) { (snapshot) in
         let value = snapshot.value as? [String : Any]
         print("value : \(value)")
       }
       
-      ref.child("archiveData").setValue(["2" : ["bonus" : 7, "number" : ["1", "2"]]])
-      ref.child("archiveData").updateChildValues(["3" : ["bonus" : 7, "number" : ["1", "2"]]])
+//      ref.child("archiveData").setValue(["2" : ["bonus" : 7, "number" : ["1", "2"]]])
+//      ref.child("archiveData").updateChildValues(["3" : ["bonus" : 7, "number" : ["1", "2"]]])
       
       
       
@@ -49,14 +49,6 @@ final class MainViewController: UIViewController {
         // firstView.qrButton.addTarget(self, action: #selec, for: <#T##UIControl.Event#>)
     }
   
-  func setData(num: Int) {
-    let urlString = "https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo=" + String(num)
-    let url = URL(string: urlString)!
-    
-    let dataTask = URLSession.shared.dataTask(with: url) { (data, response, error) in
-      let jsonObject = JSONSerialization.jsonObject(with: data!, options: <#T##JSONSerialization.ReadingOptions#>)
-    }
-  }
     
     override func viewDidAppear(_ animated: Bool) {
         // 시점 문제 해결하려고
@@ -114,35 +106,35 @@ final class MainViewController: UIViewController {
         }
         
             
-        DispatchQueue.global().async {
-            let request = NSMutableURLRequest(url: NSURL(string: "https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo=" + String(self.lottoRound))! as URL,
-                                              cachePolicy: .useProtocolCachePolicy,
-                                              timeoutInterval: 10.0)
-            request.httpMethod = "GET"
-            
-            let session = URLSession.shared
-            let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
-                if (error != nil) {
-                } else {
-                    let httpResponse = response as? HTTPURLResponse
-                    let data = try? JSONDecoder().decode(LottoriCodable.self, from: data!)
-                    DispatchQueue.main.async {
-                        
-                        self.firstView.model = LottoDataModel(date: data!.drwNoDate,
-                                                              round: data!.drwNo,
-                                                              num1: data!.drwtNo1,
-                                                              num2: data!.drwtNo2,
-                                                              num3: data!.drwtNo3,
-                                                              num4: data!.drwtNo4,
-                                                              num5: data!.drwtNo5,
-                                                              num6: data!.drwtNo6,
-                                                              numBonus: data!.bnusNo)
-                    }
-                }
-            })
-            dataTask.resume()
-        }
-        
+//        DispatchQueue.global().async {
+//            let request = NSMutableURLRequest(url: NSURL(string: "https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo=" + String(self.lottoRound))! as URL,
+//                                              cachePolicy: .useProtocolCachePolicy,
+//                                              timeoutInterval: 10.0)
+//            request.httpMethod = "GET"
+//
+//            let session = URLSession.shared
+//            let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
+//                if (error != nil) {
+//                } else {
+//                    let httpResponse = response as? HTTPURLResponse
+//                    let data = try? JSONDecoder().decode(LottoriCodable.self, from: data!)
+//                    DispatchQueue.main.async {
+//
+//                        self.firstView.model = LottoDataModel(date: data!.drwNoDate,
+//                                                              round: data!.drwNo,
+//                                                              num1: data!.drwtNo1,
+//                                                              num2: data!.drwtNo2,
+//                                                              num3: data!.drwtNo3,
+//                                                              num4: data!.drwtNo4,
+//                                                              num5: data!.drwtNo5,
+//                                                              num6: data!.drwtNo6,
+//                                                              numBonus: data!.bnusNo)
+//                    }
+//                }
+//            })
+//            dataTask.resume()
+//        }
+      
     }
     
 }
